@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <meta name="viewport" content="width=590">     
+  <head>
+    <title>
+      GUI demo
+    </title>
+	<link rel="stylesheet" type="text/css" href="styles.css">  
+  </head>
+  <body>
+    <h1>GUI Demo - matching icons game</h1>
+    <div id='images'>
+      <div id='imageset1'>
+        <img src="emos\1000.gif">
+        <img src="emos\1001.gif">
+        <img src="emos\1002.gif"><br>
+        <img src="emos\1003.gif">
+        <img src="emos\1004.gif">
+        <img src="emos\1005.gif"><br>
+        <img src="emos\1006.gif">
+        <img src="emos\1007.gif">
+        <img src="emos\1008.gif"><br>
+      </div>
+      <div id=spacer>
+      </div>
+      <div id='imageset2'>
+        <input type="image" src="emos\1009.gif">
+        <input type="image" src="emos\1010.gif">
+        <input type="image" src="emos\1011.gif"><br>
+        <input type="image" src="emos\1012.gif">
+        <input type="image" src="emos\1013.gif">
+        <input type="image" src="emos\1014.gif"><br>
+        <input type="image" src="emos\1015.gif">
+        <input type="image" src="emos\1016.gif">
+        <input type="image" src="emos\1017.gif"><br>
+      </div>
+    </div>
+    <p> </p>
+    <div id="controls">
+      <progress value="0" max="20" id="progressBar"></progress><br>
+      <button id="instructions" onclick="instructions()">Instructions/Reset</button><br>
+      <button id="player1Button" onclick="play(1)">Player 1</button>
+      <button id="player2Button" onclick="play(2)">Player 2</button><br>
+      <table id="scoreTable">
+        <tr>
+          <td>Score</td>
+          <td>Score</td>
+        </tr>
+        <tr>
+          <td><input type="text" id="player1Score" value="0" size=2 disabled=true></td>
+          <td><input type="text" id="player2Score" value="0" size=2 disabled=true></td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
